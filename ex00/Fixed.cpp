@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:28:24 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/22 16:49:32 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/01/24 14:56:36 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ Fixed::Fixed(Fixed const & src){
 }
 
 Fixed::~Fixed(void){
-	std::cout << "Destructoir called" << std::endl;
+	std::cout << "Destructor called" << std::endl;
 	return ;
 }
 

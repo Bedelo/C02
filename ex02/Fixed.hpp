@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:28:17 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/24 15:45:25 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/01/24 16:40:39 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,40 @@ class Fixed{
 	
 public:
 	Fixed(void);
-	Fixed(int nb);
-	Fixed(float nb);
+	Fixed(int const nb);
+	Fixed(float const  nb);
 	Fixed(Fixed const & src);
 	~Fixed(void);
 
 	Fixed & operator=(Fixed const & rhs);
+	
+	Fixed operator+(Fixed const & rhs) const;
+	Fixed operator-(Fixed const & rhs) const;
+	Fixed operator*(Fixed const & rhs) const;
+	Fixed operator/(Fixed const & rhs) const;
+
+	bool operator<(Fixed const & rhs) const;
+	bool operator>(Fixed const & rhs) const;
+	bool operator>=(Fixed const & rhs) const;
+	bool operator<=(Fixed const & rhs) const;
+	bool operator==(Fixed const & rhs) const;
+	bool operator!=(Fixed const & rhs) const;
+	
+	Fixed operator++( int);
+	Fixed & operator++( void);
+	Fixed operator--( int);
+	Fixed & operator--( void);
+	
 	int getRawBits( void ) const;
 	void setRawBits( int const raw );
 
 	float toFloat( void ) const;
 	int toInt( void ) const;
+
+	static Fixed  & min(Fixed & min1, Fixed & min2);
+	static Fixed  min(Fixed const & min1, Fixed const & min2);
+	static Fixed  & max(Fixed & max1, Fixed & max2);
+	static Fixed  max(Fixed const & max1, Fixed const & max2);
 
 private:
 	int _nb_fix;
