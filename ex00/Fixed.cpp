@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:28:24 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/24 14:56:36 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/15 13:56:34 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Fixed::Fixed(void):_nb_fix(0){
 }
 
 Fixed::Fixed(int nb):_nb_fix(nb){
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Default constructor_2 called" << std::endl;
 	return ;
 }
 

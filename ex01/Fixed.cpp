@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:28:24 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/15 10:48:19 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/15 13:50:20 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ std::ostream & operator<<(std::ostream & o, Fixed const & rhs) {
 Fixed & Fixed::operator=(Fixed const & rhs){
 	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &rhs) {
-		this->setRawBits(rhs.getRawBits())  ;
+		this->setRawBits(rhs.getRawBits());
 	}
 	return *this;
 }
