@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:28:17 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/14 15:43:08 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/15 11:41:29 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+
+#define RED = "\033[31m"; 
 
 class Fixed{
 	

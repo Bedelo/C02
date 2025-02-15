@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:28:24 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/24 16:52:40 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/15 10:35:38 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ Fixed::Fixed(void):_nb_fix(0){
 	return ;
 }
 
-Fixed::Fixed(float const nb):_nb_fix(nb){
+Fixed::Fixed(float const nb){
 	// std::cout << "Float constructor called" << std::endl;
 	this->_nb_fix = roundf( nb * ( 1 << Fixed::_nb_fraction )); 
 	return ;
 }
 
-Fixed::Fixed(int const nb):_nb_fix(nb){
+Fixed::Fixed(int const nb){
 	// std::cout << "Int constructor called" << std::endl;
 	this->_nb_fix = nb * ( 1 << Fixed::_nb_fraction );
 	return ;
